@@ -1,0 +1,39 @@
+@import '_variables';
+
+div.task-container {
+  height: calc(100vh - $header-height) !important;
+}
+
+div.task-list {
+  width: 40%;
+ }
+ 
+ @media screen and (max-width: 1400px) {
+   div.task-list{
+     width: 50%;
+   }
+ }
+ 
+ @media screen and (max-width: 1200px) {
+   div.task-list {
+     width: 60%;
+   }
+ }
+ 
+ @media screen and (max-width: 992px) {
+   div.task-list {
+     width: 70%;
+   }
+ }
+ 
+ @media screen and (max-width: 768px) {
+   div.task-list {
+     width: 80%;
+   }
+ }
+ 
+ @media screen and (max-width: 576px) {
+   div.task-list {
+     width: 100%;
+   }
+ }

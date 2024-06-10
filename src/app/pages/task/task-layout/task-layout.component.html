@@ -1,0 +1,13 @@
+<header class="task-header d-flex justify-content-between align-items-center px-3 border-bottom">
+  <div class="d-flex gap-1">
+    <label class="fw-bold fs-5">Usuario: </label>
+    @if (user$ | async; as user) {
+    <label id="username" class="fs-5">{{user.username}}</label>
+    }
+    @else {
+    <label id="anonymous" class="fs-5">Anónimo</label>
+    }
+  </div>
+  <button id="logout" class="btn btn-secondary" (click)="onCloseSession()">Cerrar Sesión</button>
+</header>
+<router-outlet />

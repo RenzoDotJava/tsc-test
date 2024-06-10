@@ -1,0 +1,34 @@
+div.login-container {
+  padding: 0 320px;
+
+  & div.login-title {
+    left: 72px;
+    top: -20px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  div.login-container {
+    padding: 0 220px;
+
+    & div.login-title {
+      left: 48px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  div.login-container {
+    padding: 0 120px;
+
+    & div.login-title {
+      left: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  div.login-container {
+    padding: 0 40px;
+  }
+}

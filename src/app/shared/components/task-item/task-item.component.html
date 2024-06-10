@@ -1,0 +1,10 @@
+<div class="d-flex align-items-center">
+  <div class="form-check d-flex align-items-center gap-1">
+    <input class="form-check-input" type="checkbox" [checked]="task.checked" id="flexCheckDefault"
+      (change)="onChangeTask($event)">
+    <label class="form-check-label fs-5 ms-1" for="flexCheckDefault">
+      {{ task.name }}
+    </label>
+  </div>
+  <button type="button" class="btn btn-link" (click)="onDeleteTask()" [disabled]="task.checked">X</button>
+</div>
